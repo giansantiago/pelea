@@ -7,4 +7,5 @@ Suite Teardown    common_kw.End Test
 
 *** Test Cases ***
 Login With Valid Credentials
+    [Documentation]    test push to github
     login_kw.successful login
