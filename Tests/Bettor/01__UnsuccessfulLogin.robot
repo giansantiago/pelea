@@ -10,14 +10,8 @@ Suite Teardown   common_kw.End Test
 *** Test Cases ***
 
 Login with invalid credentials    ${email}    ${password}    ${errormessage}
+    [Documentation]    First pull
     [Template]    Unsuccessful Login
-
-    #sabongerosbettor.unsuccessful login
-#    [Template]    sabongerosbettor.unsuccessful login
-#    ${BLANK_EMAIL}
-#    ${INVALID_PASSWORD}
-#    ${BLANK_PASSWORD}
-#    ${NON_REGISTERED_EMAIL}
 
 *** Keywords ***
 Unsuccessful Login
