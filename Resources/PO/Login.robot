@@ -7,6 +7,7 @@ ${email_tb} =    //input[@id='email']
 ${password_tb} =    //input[@id='password']
 ${login_btn} =    //button[@class='btn btn-primary']
 ${error_message_div} =    //div[@class='toast-top-center toast-container']
+${register_link}    //div[@class='sign-up mt-18']/p/strong
 
 *** Keywords ***
 
@@ -41,3 +42,6 @@ Verify Login Error Message
 Clear Login Fields
     clear element text    ${email_tb}
     clear element text    ${password_tb}
+
+Navigate Registration Page
+    click element    ${register_link}

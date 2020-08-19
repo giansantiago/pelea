@@ -1,6 +1,6 @@
 *** Variables ***
 ${BROWSER} =    gc
-${ENVIRONMENT} =    dev
+${ENVIRONMENT} =    pelea
 &{URL}    dev=http://dev-sabong-bettor.citrof.com/login    pelea=https://staging.peleadegallos.mx/login
 #&{USER_ACCOUNT}    email=jovani.ogaya@citrof.com    password=p@ssw0rdS123
 

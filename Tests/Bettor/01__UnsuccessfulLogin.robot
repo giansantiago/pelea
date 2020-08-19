@@ -1,11 +1,11 @@
 *** Settings ***
 Library    SeleniumLibrary
-Library    DataDriver    C:/robot-scripts/sabongeros/Data/testdata.xlsx    sheet_name=Sheet1
+Library    DataDriver    C:/robot-scripts/sabongeros/Data/testdata.xlsx    sheet_name=login
 Resource    C:/robot-scripts/sabongeros/Resources/Common_KW.robot
 Resource    C:/robot-scripts/sabongeros/Resources/Login_KW.robot
-Suite Setup    common_kw.Start Test
-Suite Teardown   common_kw.End Test
-#Test Template    Unsuccessful Login
+Suite Setup    common_kw.Start Login Suite
+Suite Teardown   common_kw.End Suite
+
 
 *** Test Cases ***
 
