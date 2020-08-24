@@ -9,6 +9,7 @@ ${login_btn} =    //button[@class='btn btn-primary']
 ${error_message_div} =    //div[@class='toast-top-center toast-container']
 ${register_link}    //div[@class='sign-up mt-18']/p/strong
 
+
 *** Keywords ***
 
 Navigate Login Page

@@ -6,6 +6,7 @@ Resource    C:/robot-scripts/sabongeros/Data/InputData.robot
 ${legal_age_btn}    //div[@class='col-sm-7 flex-align-center']//button[@class='btn btn-primary']
 ${register_link}    //div[@class='sign-up mt-18']/p/strong
 ${terms_btn}    //div[@class='btn-section flex-align-center mb-15']/button
+${forgotpassword_link}    //a[@class='cont-sub text-btn-hover']
 
 
 *** Keywords ***
@@ -24,6 +25,13 @@ Start Registration Suite
     click element    ${register_link}
     wait until element is visible    ${terms_btn}
     click element    ${terms_btn}
+
+Start Forgot Password Suite
+    open browser    ${URL.${ENVIRONMENT}}     ${BROWSER}
+    maximize browser window
+    wait until element is visible    ${legal_age_btn}
+    click element    ${legal_age_btn}
+    click element    ${forgotpassword_link}
 
 End Suite
         close browser
