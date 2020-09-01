@@ -1,8 +1,10 @@
 *** Settings ***
 Library    SeleniumLibrary
 Resource    C:/robot-scripts/sabongeros/Data/InputData.robot
-*** Variables ***
+Resource    C:/robot-scripts/sabongeros/Resources/Login_KW.robot
+Resource    C:/robot-scripts/sabongeros/Resources/ChangePassword_KW.robot
 
+*** Variables ***
 ${legal_age_btn}    //div[@class='col-sm-7 flex-align-center']//button[@class='btn btn-primary']
 ${register_link}    //div[@class='sign-up mt-18']/p/strong
 ${terms_btn}    //div[@class='btn-section flex-align-center mb-15']/button
@@ -32,6 +34,14 @@ Start Forgot Password Suite
     wait until element is visible    ${legal_age_btn}
     click element    ${legal_age_btn}
     click element    ${forgotpassword_link}
+
+Start Change Password Suite
+    open browser    ${URL.${ENVIRONMENT}}     ${BROWSER}
+    maximize browser window
+    wait until element is visible    ${legal_age_btn}
+    click element    ${legal_age_btn}
+    login_kw.Login Start Suite
+    changepassword_kw.go to change password page
 
 End Suite
         close browser

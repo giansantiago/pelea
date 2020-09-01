@@ -1,13 +1,19 @@
 *** Variables ***
 ${BROWSER} =    gc
-${ENVIRONMENT} =    pelea
+${ENVIRONMENT} =    dev
 &{URL}    dev=http://dev-sabong-bettor.citrof.com/login    pelea=https://staging.peleadegallos.mx/login
 #&{USER_ACCOUNT}    email=jovani.ogaya@citrof.com    password=p@ssw0rdS123
 
 #Valid account for login
-${VALID_EMAIL} =  qabettor@citrof.com
+${VALID_EMAIL} =  gian.santiago@citrof.com
 ${VALID_PASSWORD} =  Tester101!
+${VALID_PASSWORD2} =  Tester101!!
 
+#Change password
+${NEWPASS1} =    Tester101!
+${CONFIRMPASS1} =    Tester101!
+${NEWPASS2} =    Tester101!!
+${CONFIRMPASS2} =    Tester101!!
 
 
 #${EMPTY}
