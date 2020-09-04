@@ -53,5 +53,12 @@ Start Edit Profile Suite
     login_kw.Login Start Suite
     editprofile_kw.go to edit profile page
 
+Start FAQ Suite
+    open browser    ${URL.${ENVIRONMENT}}     ${BROWSER}
+    maximize browser window
+    wait until element is visible    ${legal_age_btn}
+    click element    ${legal_age_btn}
+    login_kw.Login Start Suite
+
 End Suite
         close browser
