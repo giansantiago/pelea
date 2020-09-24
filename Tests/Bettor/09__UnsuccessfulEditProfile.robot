@@ -24,3 +24,4 @@ Unsuccessful Edit Profile
     editprofile.enter birthdate    ${bday}
     editprofile.click save changes button
     editprofile.verify error message    ${errormessage}
+    editprofile.clear fields

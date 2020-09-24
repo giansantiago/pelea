@@ -2,12 +2,13 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${profile_menu}     //div[@class='main text-btn-hover flex-align-center mat-menu-trigger']
+${profile_menu}     //div[@class='profile-header move-right flex-align-center ng-star-inserted'] //div[4]
 ${profile_btn}     //div[@class='notifs']/div[2]
 ${settings_btn}    //div[@class='notifs']/div[3]
 ${rules_btn}    //div[@class='header-nav flex-align-center ng-star-inserted']/div[3]
 ${faq_btn}    //div[@class='header-nav flex-align-center ng-star-inserted']/div[4]
 ${cashin_btn}    //div[@class='header-nav flex-align-center ng-star-inserted']/div[5]
+${cashout_btn}    //div[@class='header-nav flex-align-center ng-star-inserted']/div[6]
 
 *** Keywords ***
 Verify Successful Login
@@ -30,3 +31,7 @@ Navigate to Rules Page
 Navigate to FAQ Page
     wait until element is visible      ${faq_btn}
     click element    ${faq_btn}
+
+Navigate to CashIn Page
+    wait until element is visible      ${cashin_btn}
+    click element    ${cashin_btn}

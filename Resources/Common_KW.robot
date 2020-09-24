@@ -60,5 +60,15 @@ Start FAQ Suite
     click element    ${legal_age_btn}
     login_kw.Login Start Suite
 
+Start CashIn Suite
+    open browser    ${URL.${ENVIRONMENT}}     ${BROWSER}
+    maximize browser window
+    wait until element is visible    ${legal_age_btn}
+    click element    ${legal_age_btn}
+    login_kw.Login Start Suite
+    topnav.navigate to cashin page
+
+
+
 End Suite
         close browser
