@@ -35,3 +35,8 @@ Navigate to FAQ Page
 Navigate to CashIn Page
     wait until element is visible      ${cashin_btn}
     click element    ${cashin_btn}
+
+Navigate to Cash Out Page
+    wait until element is visible      ${cashout_btn}
+    click element    ${cashout_btn}
+
