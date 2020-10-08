@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    C:/robot-scripts/sabongeros/Data/InputData.robot
+Resource    C:/robot-scripts/sabongeros/Data/Bettor/InputData.robot
 
 
 *** Variables ***

@@ -1,8 +1,8 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    C:/robot-scripts/sabongeros/Resources/PO/TopNav.robot
-Resource    C:/robot-scripts/sabongeros/Resources/PO/Settings.robot
-Resource    C:/robot-scripts/sabongeros/Resources/PO/ChangePassword.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/PO/TopNav.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/PO/Settings.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/PO/ChangePassword.robot
 #Resource    C:/robot-scripts/sabongeros/Data/InputData.robot
 
 

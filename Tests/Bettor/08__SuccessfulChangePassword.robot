@@ -1,7 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    C:/robot-scripts/sabongeros/Resources/Common_KW.robot
-Resource    C:/robot-scripts/sabongeros/Resources/ChangePassword_KW.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/Common_KW.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/ChangePassword_KW.robot
 
 Suite Setup    common_kw.Start Change Password Suite
 Suite Teardown   common_kw.End Suite

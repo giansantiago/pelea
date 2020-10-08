@@ -1,8 +1,8 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    C:/robot-scripts/sabongeros/Resources/PO/TopNav.robot
-Resource    C:/robot-scripts/sabongeros/Resources/PO/Rules.robot
-Resource    C:/robot-scripts/sabongeros/Resources/PO/FAQ.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/PO/TopNav.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/PO/Rules.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/PO/FAQ.robot
 
 
 *** Keywords ***

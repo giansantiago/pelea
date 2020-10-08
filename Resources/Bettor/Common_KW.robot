@@ -1,9 +1,9 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    C:/robot-scripts/sabongeros/Data/InputData.robot
-Resource    C:/robot-scripts/sabongeros/Resources/Login_KW.robot
-Resource    C:/robot-scripts/sabongeros/Resources/ChangePassword_KW.robot
-Resource    C:/robot-scripts/sabongeros/Resources/EditProfile_KW.robot
+Resource    C:/robot-scripts/sabongeros/Data/Bettor/InputData.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/Login_KW.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/ChangePassword_KW.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/EditProfile_KW.robot
 
 *** Variables ***
 ${legal_age_btn}    //div[@class='col-sm-7 flex-align-center']//button[@class='btn btn-primary']

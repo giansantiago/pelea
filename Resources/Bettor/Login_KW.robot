@@ -1,7 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    C:/robot-scripts/sabongeros/Resources/PO/Login.robot
-Resource    C:/robot-scripts/sabongeros/Resources/PO/TopNav.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/PO/Login.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/PO/TopNav.robot
 
 
 *** Keywords ***
@@ -31,6 +31,11 @@ Successful Login 2
     login.enter valid password    ${VALID_PASSWORD2}
     login.click login button
     topnav.verify successful login
+
+Successful Logout
+    topnav.logout account
+    login.verify login page
+
 
 Login Start Suite
     login.navigate login page

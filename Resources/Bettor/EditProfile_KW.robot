@@ -1,9 +1,9 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    C:/robot-scripts/sabongeros/Resources/PO/TopNav.robot
-Resource    C:/robot-scripts/sabongeros/Resources/PO/Profile.robot
-Resource    C:/robot-scripts/sabongeros/Resources/PO/EditProfile.robot
-Resource    C:/robot-scripts/sabongeros/Data/InputData.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/PO/TopNav.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/PO/Profile.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/PO/EditProfile.robot
+Resource    C:/robot-scripts/sabongeros/Data/Bettor/InputData.robot
 
 
 *** Keywords ***

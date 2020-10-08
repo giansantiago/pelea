@@ -5,14 +5,21 @@ Library    SeleniumLibrary
 ${profile_menu}     //div[@class='profile-header move-right flex-align-center ng-star-inserted'] //div[4]
 ${profile_btn}     //div[@class='notifs']/div[2]
 ${settings_btn}    //div[@class='notifs']/div[3]
+${logout_btn}    //div[@class='notifs']/div[4]
 ${rules_btn}    //div[@class='header-nav flex-align-center ng-star-inserted']/div[3]
 ${faq_btn}    //div[@class='header-nav flex-align-center ng-star-inserted']/div[4]
 ${cashin_btn}    //div[@class='header-nav flex-align-center ng-star-inserted']/div[5]
 ${cashout_btn}    //div[@class='header-nav flex-align-center ng-star-inserted']/div[6]
 
+
 *** Keywords ***
 Verify Successful Login
     wait until element is visible    ${profile_menu}
+
+Logout Account
+    click element    ${profile_menu}
+    wait until element is visible    ${logout_btn}
+    click element    ${logout_btn}
 
 Navigate to Settings Page
     click element    ${profile_menu}

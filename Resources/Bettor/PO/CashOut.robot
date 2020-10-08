@@ -32,7 +32,7 @@ ${holding_filesel}    //div[@class='proof'] //input
 ${continue_btn}    //button[@class='btn btn-primary move-center']
 ${blank_idtype_error}    //div[@class='toast-message ng-star-inserted']
 ${blank_image_error}    //div[@class='toast-error ngx-toastr ng-trigger ng-trigger-flyInOut']
-
+${proof_file}    C:/robot-scripts/sabongeros/Data/Bettor/gcash receipt.png
 
 ${continue_btn2}    //button[@class='btn btn-primary move-center']
 ${amount_lbl}    //p[@class='hl-2 text-center']
@@ -105,11 +105,11 @@ Select ID Type
     click element    ${passport_lbl}
     #select from list by value    ${id_ddlist}    UMID
 Select Front View
-    choose file    ${frontview_filesel}    C:/robot-scripts/sabongeros/Data/gcash receipt.png
+    choose file    ${frontview_filesel}    ${proof_file}
 Select Back View
-    choose file    ${backview_filesel}    C:/robot-scripts/sabongeros/Data/gcash receipt.png
+    choose file    ${backview_filesel}    ${proof_file}
 Select Proof
-    choose file    ${holding_filesel}    C:/robot-scripts/sabongeros/Data/gcash receipt.png
+    choose file    ${holding_filesel}    ${proof_file}
 Click Continue Button 2
     click element    ${continue_btn2}
 Verify Error Message for Blank ID Type

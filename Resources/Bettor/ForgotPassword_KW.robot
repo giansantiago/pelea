@@ -1,7 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    C:/robot-scripts/sabongeros/Resources/PO/Login.robot
-Resource    C:/robot-scripts/sabongeros/Resources/PO/ForgotPassword.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/PO/Login.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/PO/ForgotPassword.robot
 
 *** Keywords ***
 Unsuccessful Forgot Password

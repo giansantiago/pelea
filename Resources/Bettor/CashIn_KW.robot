@@ -1,7 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    C:/robot-scripts/sabongeros/Resources/PO/TopNav.robot
-Resource    C:/robot-scripts/sabongeros/Resources/PO/CashIn.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/PO/TopNav.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/PO/CashIn.robot
 
 *** Keywords ***
 Request Cash In With Below Minimum Required Amount

@@ -1,8 +1,8 @@
 *** Settings ***
 Library    SeleniumLibrary
 Library    DatabaseLibrary
-Resource    C:/robot-scripts/sabongeros/Resources/CashIn_KW.robot
-Resource    C:/robot-scripts/sabongeros/Resources/Common_KW.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/CashIn_KW.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/Common_KW.robot
 Suite Setup    common_kw.Start Cashin Suite
 Suite Teardown   common_kw.End Suite
 

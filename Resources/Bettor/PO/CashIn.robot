@@ -21,7 +21,9 @@ ${gcash_btn}    //p[.//text() = 'GCash']
 #Amount & Proof Submission
 ${amount_tb}    //input[@id='amount']
 ${proof_filesel}    //input[@id='fileDropRef']
+${proof_file}    C:/robot-scripts/sabongeros/Data/Bettor/gcash receipt.png
 ${sendproof_btn}    //button[@class='btn btn-primary move-center']
+
 
 #Notification Modal
 #Cash-in request has been submitted
@@ -72,7 +74,7 @@ Enter Valid Amount
     input text    ${amount_tb}    1000
 
 Select Proof File
-    choose file    ${proof_filesel}    C:/robot-scripts/sabongeros/Data/gcash receipt.png
+    choose file    ${proof_filesel}    ${proof_file}
 
 Click Send Proof Button
     click element    ${sendproof_btn}

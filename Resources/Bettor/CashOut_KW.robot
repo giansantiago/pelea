@@ -1,7 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    C:/robot-scripts/sabongeros/Resources/PO/TopNav.robot
-Resource    C:/robot-scripts/sabongeros/Resources/PO/CashOut.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/PO/TopNav.robot
+Resource    C:/robot-scripts/sabongeros/Resources/Bettor/PO/CashOut.robot
 
 *** Keywords ***
 Submit Blank Amount
