@@ -6,8 +6,8 @@ ${ENVIRONMENT} =    dev
 
 #Valid account for login
 ${VALID_EMAIL} =  qaadmin@citrof.com
-${VALID_PASSWORD} =  tester101
-${VALID_PASSWORD2} =  tester101
+${VALID_PASSWORD} =  Tester101!
+${VALID_PASSWORD2} =  Tester101!!
 
 #Change password
 ${NEWPASS1} =    Tester101!
@@ -16,21 +16,30 @@ ${NEWPASS2} =    Tester101!!
 ${CONFIRMPASS2} =    Tester101!!
 
 #EditProfile
-${PHOTO} =    C:/robot-scripts/sabongeros/Data/profile_picture.jpg
-${EP_FIRSTNAME} =    Gab
+${PHOTO} =    C:/robot-scripts/sabongeros/Data//Admin/profile_picture.jpg
+${EP_FIRSTNAME} =    Gabmin
 ${EP_LASTNAME} =    Ali
 ${EP_USERNAME} =    gab.ali
-${EP_EMAIL} =    gab.ali@citrof.com
 ${EP_MOBILE} =    9555555555
-${EP_BIRTHDATE} =    09/09/2000
+${EP_EMAIL} =    gabmin@citrof.com
+${EP_ADDRESS} =    13 Manila West
 
-${EP_FIRSTNAME2} =    Gian
-${EP_LASTNAME2} =    Santiago
-${EP_USERNAME2} =    gian.santiago
-${EP_EMAIL2} =    gian.santiago@citrof.com
+
+${PHOTO} =    C:/robot-scripts/sabongeros/Data//Admin/profile_picture.jpg
+${EP_FIRSTNAME} =    Qa
+${EP_LASTNAME} =    Admin
+${EP_USERNAME} =    qaadmin
+${EP_MOBILE} =    9566433017
+${EP_EMAIL} =    qaadmin@citrof.com
+${EP_ADDRESS2} =    13 Manila West
+
+${EP_FIRSTNAME2} =    QA
+${EP_LASTNAME2} =    Admin
+${EP_USERNAME2} =    qaadmin
 ${EP_MOBILE2} =    9566433017
+${EP_EMAIL2} =    qaadmin@citrof.com
 ${EP_BIRTHDATE2} =    01/01/1991
-
+${EP_ADDRESS} =    14 Manila East
 
 #${EMPTY}
 #&{BLANK_EMAIL}          email=${EMPTY}                   password=p@ssw0rdS123   errormessage=Please complete all necessary details

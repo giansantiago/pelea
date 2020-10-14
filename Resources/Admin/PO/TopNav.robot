@@ -7,8 +7,11 @@ ${profile_menu}    //button[@class='ml-10 mat-menu-trigger mat-flat-button mat-b
 ${language_menu}    //button[@class='mat-menu-trigger mat-flat-button mat-button-base']
 ${notif_icon}    //button[@class='mr-15 mat-menu-trigger mat-icon-button mat-button-base']
 ${acctsettings_btn}    //div[@class='mat-menu-content'] /button[1]
-${changepass_btn}    //div[@class='mat-menu-content'] /button[3]
+${changepass_btn}    //div[@class='mat-menu-content'] /button[2]
 ${logout_btn}    //div[@class='mat-menu-content'] /button[3]
+
+
+
 
 *** Keywords ***
 Verify Top Nav

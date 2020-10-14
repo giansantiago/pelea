@@ -3,18 +3,43 @@ Library    SeleniumLibrary
 
 
 *** Variables ***
-${newpassword_tb}    //form[@class='ng-untouched ng-pristine ng-invalid']/div[1] //input
-${confirmpassword_tb}    //form[@class='ng-untouched ng-pristine ng-invalid']/div[2] //input
-${save_btn}    //button[@class='btn btn-primary btn-block mat-flat-button mat-button-base']
+${newpassword_tb}    //input[@formcontrolname='pass']
+${confirmpassword_tb}    //input[@formcontrolname='cPass']
+${save_btn}    //button[@type='submit']
+${errormessage_div}    //div[@class='alert alert-danger ng-star-inserted']
+${successmessage_div}    //div[@class='alert alert-success ng-star-inserted']
+${successmessage}    Password successfully changed.
 
+*** Keywords ***
+Verify Change Password Page
+    wait until element is visible    ${newpassword_tb}
+    wait until element is visible    ${confirmpassword_tb}
+    wait until element is visible    ${save_btn}
 
+Enter New Password
+    [Arguments]    ${newpass}
+    input text    ${newpassword_tb}    ${newpass}
 
-Password mismatched.
+Enter Confirm Password
+    [Arguments]    ${confirmpass}
+    input text    ${confirmpassword_tb}    ${confirmpass}
 
-The confirm password field is required.
+Click Save Button
+    click element    ${save_btn}
 
-The password field is required.
+Clear Fields
+    clear element text    ${newpassword_tb}
+    clear element text    ${confirmpassword_tb}
 
-The password must be at least 8 characters.,The password format is invalid.,This password is just too common. Please try another!
+Verify Error Message
+    [Arguments]    ${errormessage}
+    wait until element is visible    ${errormessage_div}
+    wait until element contains    ${errormessage_div}    ${errormessage}
 
-The password format is invalid.
+Verify Successful Notification
+    wait until element is visible    ${successmessage_div}
+    wait until element contains    ${successmessage_div}    ${successmessage}
+
+Page Refresh
+    reload page
+
