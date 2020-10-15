@@ -3,7 +3,7 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${name_lbl}    //div[@class='row ml-0 mr-0']/div[1]/h1
-${mobile_lbl}    //div[@class='row mt-19 ml-0 mr-0'][1]/div[1]/h1
+${mobile_lbl2}    //div[@class='row mt-19 ml-0 mr-0'][1]/div[1]/h1
 ${email_lbl2}    //div[@class='row mt-19 ml-0 mr-0'][1]/div[2]/h1
 ${dateadded_lbl}    //div[@class='row mt-19 ml-0 mr-0'][1]/div[3]/h1
 ${editprofile_btn2}    //button[@class='customBttn btn btn-sm btn-block mat-flat-button mat-button-base']
@@ -22,3 +22,8 @@ Verify Scout Profile Page
 
 Navigate to Edit Profile Page
     click element    ${editprofile_btn2}
+
+Verify Updated Scout
+    wait until element contains    ${name_lbl}    ${FULLNAME}
+    wait until element contains    ${mobile_lbl2}    ${MOBILE2}
+    wait until element contains    ${email_lbl2}    ${EMAIL2}

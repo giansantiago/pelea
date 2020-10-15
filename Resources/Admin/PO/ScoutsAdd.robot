@@ -88,7 +88,9 @@ Enter Valid Last Name
     set suite variable   ${LASTNAME2}
 
 Enter Valid Email
-    ${email} =    FakerLibrary.Email
+    ${fakeremail} =    FakerLibrary.Word
+    ${fakeremail2} =    FakerLibrary.Random Number    digits=4
+    ${email} =  catenate  SEPARATOR=    ${fakeremail}  ${fakeremail2}    @gmail.com
     input text    ${email_tb2}    ${email}
     ${EMAIL2} =   get text    ${email_tb2}
     set suite variable   ${EMAIL2}

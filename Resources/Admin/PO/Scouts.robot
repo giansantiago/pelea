@@ -30,7 +30,7 @@ Navigate to Scout Profile
     click element    ${search_result}
 
 Search Newly Added Scout
-    input text    ${search_tb}    ${FIRSTNAME2}    ${LASTNAME2}
+    input text    ${search_tb}    ${FIRSTNAME2}    #${LASTNAME2}
     press keys    ${search_tb}    ENTER
 
 Verify Search Result For Newly Added Scout

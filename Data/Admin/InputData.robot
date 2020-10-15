@@ -24,15 +24,6 @@ ${EP_MOBILE} =    9555555555
 ${EP_EMAIL} =    gabmin@citrof.com
 ${EP_ADDRESS} =    13 Manila West
 
-
-${PHOTO} =    C:/robot-scripts/sabongeros/Data//Admin/profile_picture.jpg
-${EP_FIRSTNAME} =    Qa
-${EP_LASTNAME} =    Admin
-${EP_USERNAME} =    qaadmin
-${EP_MOBILE} =    9566433017
-${EP_EMAIL} =    qaadmin@citrof.com
-${EP_ADDRESS2} =    13 Manila West
-
 ${EP_FIRSTNAME2} =    QA
 ${EP_LASTNAME2} =    Admin
 ${EP_USERNAME2} =    qaadmin
@@ -41,8 +32,17 @@ ${EP_EMAIL2} =    qaadmin@citrof.com
 ${EP_BIRTHDATE2} =    01/01/1991
 ${EP_ADDRESS} =    14 Manila East
 
-#${EMPTY}
-#&{BLANK_EMAIL}          email=${EMPTY}                   password=p@ssw0rdS123   errormessage=Please complete all necessary details
-#&{BLANK_PASSWORD}       email=gian.santiago@citrof.com    password=${EMPTY}       errormessage=Please complete all necessary details
-#&{INVALID_PASSWORD}     email=jovani.ogaya@citrof.com    password=invalidpass    errormessage=Invalid email or password
-#&{NON_REGISTERED_EMAIL}    email=citrofqa@gmail.com      password=p@ssw0rdS123   errormessage=Invalid email or password
+#Edit Scout
+${SC_FIRSTNAME} =   Gab
+${SC_LASTNAME} =    Scout
+${SC_EMAIL} =    gabscout@auto.com
+${SC_MOBILE} =    0952546546
+${SC_USERNAME} =    gabscout
+${SC_PASSWORD} =    tester102
+
+${SC_FIRSTNAME2} =   QA
+${SC_LASTNAME2} =    Scout
+${SC_EMAIL2} =    qascout@citrof.com
+${SC_MOBILE2} =    0955123232
+${SC_USERNAME2} =    qascout
+${SC_PASSWORD2} =    tester101

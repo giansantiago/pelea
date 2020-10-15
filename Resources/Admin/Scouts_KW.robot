@@ -63,3 +63,32 @@ Unsuccessful Edit Scout
     scoutsedit.click update button
     scoutsedit.verify error message    ${errormessage}
     scoutsedit.page refresh
+
+Successful Edit Scout
+    scoutsedit.verify edit profile page
+    scoutsedit.clear fields
+    scoutsedit.enter first name    ${SC_FIRSTNAME}
+    scoutsedit.enter last name    ${SC_LASTNAME}
+    scoutsedit.enter email    ${SC_EMAIL}
+    scoutsedit.enter mobile    ${SC_MOBILE}
+    scoutsedit.enter username    ${SC_USERNAME}
+    scoutsedit.enter password    ${SC_PASSWORD}
+    scoutsedit.get fields text
+    scoutsedit.click update button
+    scoutsprofile.verify scout profile page
+    scoutsprofile.verify updated scout
+
+Successful Edit Scout 2
+    scoutsprofile.navigate to edit profile page
+    scoutsedit.verify edit profile page
+    scoutsedit.clear fields
+    scoutsedit.enter first name    ${SC_FIRSTNAME2}
+    scoutsedit.enter last name    ${SC_LASTNAME2}
+    scoutsedit.enter email    ${SC_EMAIL2}
+    scoutsedit.enter mobile    ${SC_MOBILE2}
+    scoutsedit.enter username    ${SC_USERNAME2}
+    scoutsedit.enter password    ${SC_PASSWORD2}
+    scoutsedit.get fields text
+    scoutsedit.click update button
+    scoutsprofile.verify scout profile page
+    scoutsprofile.verify updated scout

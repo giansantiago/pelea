@@ -3,7 +3,7 @@ Library    SeleniumLibrary
 Resource    C:/robot-scripts/sabongeros/Data/Admin/InputData.robot
 
 *** Variables ***
-${fname_tb}    //div[@class='row ml-0 mr-0'][1]/div[1] //input
+${fname_tb3}    //div[@class='row ml-0 mr-0'][1]/div[1] //input
 ${lname_tb3}    //div[@class='row ml-0 mr-0'][1]/div[2] //input
 ${email_tb3}    //div[@class='row ml-0 mr-0'][2]/div[1] //input
 ${mobile_tb3}    //div[@class='row ml-0 mr-0'][2]/div[2] //input
@@ -15,7 +15,7 @@ ${update_btn3}    //button[@class='btn btn-primary btn-block mat-flat-button mat
 
 *** Keywords ***
 Verify Edit Profile Page
-    wait until element is visible    ${fname_tb}
+    wait until element is visible    ${fname_tb3}
     wait until element is visible    ${lname_tb3}
     wait until element is visible    ${email_tb3}
     wait until element is visible    ${mobile_tb3}
@@ -26,7 +26,7 @@ Verify Edit Profile Page
 
 Enter First Name
     [Arguments]    ${firstname}
-    input text    ${fname_tb}    ${firstname}
+    input text    ${fname_tb3}    ${firstname}
 
 Enter Last Name
     [Arguments]    ${lastname}
@@ -60,13 +60,24 @@ Verify Error Message
 
 
 Clear fields
-    clear element text    ${fname_tb}
+    clear element text    ${fname_tb3}
     clear element text    ${lname_tb3}
     clear element text    ${email_tb3}
-    clear element text     ${mobile_tb3}
+    clear element text    ${mobile_tb3}
     clear element text    ${username_tb3}
     clear element text    ${password_tb3}
 
 Page Refresh
     reload page
 
+Get Fields Text
+    ${FIRSTNAME2} =   get value    ${fname_tb3}
+    ${LASTNAME2} =   get value    ${lname_tb3}
+    ${EMAIL2} =   get value    ${email_tb3}
+    ${MOBILE2} =    get value    ${mobile_tb3}
+    set suite variable   ${FIRSTNAME2}
+    set suite variable   ${LASTNAME2}
+    set suite variable   ${EMAIL2}
+    set suite variable   ${MOBILE2}
+    ${FULLNAME} =    catenate    ${FIRSTNAME2}    ${LASTNAME2}
+    set suite variable   ${FULLNAME}
